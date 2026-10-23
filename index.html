@@ -1,0 +1,129 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marwa Shopping Mall</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>🛍️ Marwa Shopping Mall</h1>
+        <p>Your Little World of Shopping! 💖</p>
+    </header>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#cart">My Cart</a>
+    </nav>
+
+    <section class="hero" id="home">
+        <h2>Welcome to Marwa's Store! 🌸</h2>
+        <p>Find lovely things at lovely prices!</p>
+
+        <input
+            type="text"
+            id="search"
+            placeholder="🔍 Search for a product..."
+        >
+    </section>
+
+    <h2 class="section-title" id="products">
+        ✨ Our Products ✨
+    </h2>
+
+    <main class="products">
+
+        <div class="card" data-name="school bag">
+            <div class="product-picture">🎒</div>
+            <h3>School Bag</h3>
+            <p>A lovely school bag.</p>
+            <p class="price">Rs. 1500</p>
+            <button class="add-button"
+                data-name="School Bag" data-price="1500">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="card" data-name="books notebook">
+            <div class="product-picture">📚</div>
+            <h3>Books</h3>
+            <p>Books for curious minds.</p>
+            <p class="price">Rs. 500</p>
+            <button class="add-button"
+                data-name="Books" data-price="500">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="card" data-name="watch">
+            <div class="product-picture">⌚</div>
+            <h3>Wrist Watch</h3>
+            <p>A stylish little watch.</p>
+            <p class="price">Rs. 2000</p>
+            <button class="add-button"
+                data-name="Wrist Watch" data-price="2000">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="card" data-name="teddy bear toy">
+            <div class="product-picture">🧸</div>
+            <h3>Teddy Bear</h3>
+            <p>A cute teddy friend.</p>
+            <p class="price">Rs. 1000</p>
+            <button class="add-button"
+                data-name="Teddy Bear" data-price="1000">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="card" data-name="flower">
+            <div class="product-picture">💐</div>
+            <h3>Flower Bouquet</h3>
+            <p>A beautiful gift.</p>
+            <p class="price">Rs. 800</p>
+            <button class="add-button"
+                data-name="Flower Bouquet" data-price="800">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="card" data-name="headphones">
+            <div class="product-picture">🎧</div>
+            <h3>Headphones</h3>
+            <p>Listen to your favorites.</p>
+            <p class="price">Rs. 1200</p>
+            <button class="add-button"
+                data-name="Headphones" data-price="1200">
+                Add to Cart
+            </button>
+        </div>
+
+    </main>
+
+    <section class="cart-section" id="cart">
+        <h2>🛒 My Shopping Cart</h2>
+        <p>Items: <span id="count">0</span></p>
+        <p>Total: Rs. <span id="total">0</span></p>
+
+        <ul id="cart-items"></ul>
+
+        <button id="clear-cart" class="clear-button">
+            Clear Cart
+        </button>
+    </section>
+
+    <footer>
+        <h3>Marwa Shopping Mall 💖</h3>
+        <p>Made with love by Marwa</p>
+        <p>© 2026 Marwa Shopping Mall</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
